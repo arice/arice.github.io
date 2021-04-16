@@ -12,8 +12,9 @@ Here's a quick summary of how I set up a MunkiReport server on Digital Ocean usi
 ## Configure stuff
 Three files in the right places and one command will get this going.
 
+### docker-compose.yml
 - docker-compose.yml contains the basic info defining the three docker containers: MunkiReport, MySQL, and Caddy
-In my users's home directory, I created ~/munkireport/docker-compose.yml with the following contents
+In my users's home directory, I created **~/munkireport/docker-compose.yml** with the following contents
 
 ```
 version: '3.8'
@@ -66,8 +67,9 @@ services:
         restart: always
 ```
 
-- munkireport.env customizes the MunkiReport instance
-The location of this file is defined in docker-compose.yml. Mine lives at /var/docker/munkireport.env and looks like this
+### munkireport.env 
+munkireport.env customizes the MunkiReport instance
+The location of this file is defined in docker-compose.yml. Mine lives at **/var/docker/munkireport.env** and looks like this
 
 ```
 INDEX_PAGE=index.php?
@@ -105,8 +107,9 @@ DEBUG=TRUE
 
 ```
 
-- Caddyfile sets up Caddy to do the https stuff for the MunkiReport container
-The location of this file is also defined in docker-compose.yml. Mine lives at /var/docker/caddy/Caddyfile and looks like this
+### Caddyfile
+Caddyfile sets up Caddy to do the https stuff for the MunkiReport container
+The location of this file is also defined in docker-compose.yml. Mine lives at **/var/docker/caddy/Caddyfile** and looks like this
 
 ```
 munkireport.example.net {
