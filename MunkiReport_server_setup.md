@@ -132,3 +132,11 @@ With these three files in place, you can start everything up with `sudo docker-c
 To create a local admin user for MunkiReport (the username is defined in the munkireport.env as "adminuser"), visit 
 https://munkireport.example.net/index.php?/auth/generate/ to define the username and password. You'll download an adminuser.yml file, and place this file in /var/docker/munkireport-local/users.
 Now you can visit https://munkireport.example.net and log in and the rest is up to you!
+
+## Future Improvements
+
+I need to learn how to upgrade MunkiReport. I believe this docker setup is designed to make that pretty painless, by storing the customized elements in a safe place so the docker image can be replaced as needed, but I have no idea what is actually involved and whether what I've just written is accurate.
+
+## Questions or Feedback?
+
+I'd love to hear from you, you can find me in the [MacAdmins Slack](https://www.macadmins.org) as @adamrice.
