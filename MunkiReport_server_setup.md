@@ -139,4 +139,4 @@ I need to learn how to upgrade MunkiReport. I believe this docker setup is desig
 
 ## Questions or Feedback?
 
-I'd love to hear from you, you can find me in the [MacAdmins Slack](https://www.macadmins.org) as @adamrice.
+I'd love to hear from you! You can find me in the [MacAdmins Slack](https://www.macadmins.org) as @adamrice and on Twitter at [@_AskAdam](https://twitter.com/_AskAdam)
