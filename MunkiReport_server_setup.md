@@ -1,3 +1,5 @@
+# MunkiReport on a Digital Ocean Docker droplet
+
 Here's a quick summary of how I set up a MunkiReport server on Digital Ocean using Docker. My setup uses MySQL for the database and Caddy which handles maintaining a valid Let's Encrypt certificate for https.
 
 (I'm out of my depth here so if you see strange choices, obvious mistakes, etc., it's probably because I just didn't know any better.)
