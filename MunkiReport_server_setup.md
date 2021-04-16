@@ -122,6 +122,8 @@ munkireport.example.net {
 
 ```
 
+## Next Steps
+
 With these three files in place, you can start everything up with `sudo docker-compose up`. (When everything's working right, you can use `sudo docker-compose up -d` to send the Docker stuff to the background and get back to a shell prompt.)
 
 To create a local admin user for MunkiReport (the username is defined in the munkireport.env as "adminuser"), visit 
