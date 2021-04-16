@@ -127,7 +127,7 @@ munkireport.example.net {
 
 ## Next Steps
 
-With these three files in place, you can start everything up with `sudo docker-compose up`. (When everything's working right, you can use `sudo docker-compose up -d` to send the Docker stuff to the background and get back to a shell prompt.)
+With these three files in place, you can start everything up with `sudo docker-compose up` (run this in the directory containing docker-compose.yml). When everything's working right, you can use `sudo docker-compose up -d` to send the Docker stuff to the background and get back to a shell prompt.
 
 To create a local admin user for MunkiReport (the username is defined in the munkireport.env as "adminuser"), visit 
 https://munkireport.example.net/index.php?/auth/generate/ to define the username and password. You'll download an adminuser.yml file, and place this file in /var/docker/munkireport-local/users.
