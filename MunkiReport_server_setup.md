@@ -25,7 +25,7 @@ networks:
         external: true
 services:
     munkireport:
-        image: "munkireport/munkireport-php:5.6.5"
+        image: "ghcr.io/munkireport/munkireport-php:v5.7.1"
         container_name: munkireport
         env_file:
             - /var/docker/munkireport.env
@@ -133,9 +133,14 @@ To create a local admin user for MunkiReport (the username is defined in the mun
 https://munkireport.example.net/index.php?/auth/generate/ to define the username and password. You'll download an adminuser.yml file, and place this file in /var/docker/munkireport-local/users.
 Now you can visit https://munkireport.example.net and log in and the rest is up to you!
 
-## Future Improvements
+## Upgrading
 
-I need to learn how to upgrade MunkiReport. I believe this docker setup is designed to make that pretty painless, by storing the customized elements in a safe place so the docker image can be replaced as needed, but I have no idea what is actually involved and whether what I've just written is accurate.
+I've done one upgrade to my MunkiReport server, to update MunkiReport from 5.6.5 to 5.7.1 (required for Monterey 12.3+). The process was quite simple!
+  1. Edit the 7th line of docker-compose.yml to specify the newer version of MunkiReport (https://github.com/munkireport/munkireport-php/pkgs/container/munkireport-php/15262697?tag=v5.7.1)
+  2. Take the enviromnent down with `sudo docker-compose down`
+  3. Update MunkiReport & start everything back up with `sudo docker-compose up -d`
+
+Note: You'll also want to download the latest client installer and distribute that. Instructions are here under "Generate an Installer Package (pkg)": https://github.com/munkireport/munkireport-php/wiki/Client-setup
 
 ## Questions or Feedback?
 
