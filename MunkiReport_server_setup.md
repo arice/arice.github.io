@@ -4,6 +4,8 @@ Here's a quick summary of how I set up a MunkiReport server on Digital Ocean usi
 
 (I'm out of my depth here so if you see strange choices, obvious mistakes, etc., it's probably because I just didn't know any better.)
 
+*Note: since I wrote this, the official Docker setup instructions have been updated. You may want to review those, as they were definitely written by someone who understands this stuff better than I. https://github.com/munkireport/munkireport-php/wiki/Docker* 
+
 ## Create a Droplet 
 - create a droplet on Digital Ocean using the "Docker 19.x on Ubuntu 20.x" image. I used the cheapest type of droplet & figure I'll upgrade if I need more RAM or whatever.
 - follow the basic ubuntu security guide to make sure your setup is reasonably secure. I created a user to use instead of root, and granted sudo access. I can't figure out why this is safer than using root and just not letting your password/key get stolen but that's probably my problem.
